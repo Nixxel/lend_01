@@ -1,0 +1,753 @@
+@import "bourbon"
+@import "vars.sass"
+@import "sprite/sprite.sass"
+
+// loads Libs SASS
+@import "app/libs/animate/animate.sass"
+@import "app/libs/owl.carousel/assets/owl.carousel.sass"
+@import "app/libs/jquery/jquery-ui.min"
+ 
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+// Start style icon
+.icon_investments
+    display: inline-block
+    @include sprite($icon-investments)
+.icon_payback
+    display: inline-block
+    @include sprite($icon-payback)
+.icon_clock
+    display: inline-block
+    @include sprite($icon-clock)
+.icon_why_we_1
+    display: inline-block
+    @include sprite($why-we1)
+.icon_why_we_2
+    display: inline-block
+    @include sprite($why-we2)
+.icon_why_we_3
+    display: inline-block
+    @include sprite($why-we3)
+.icon_why_we_4
+    display: inline-block
+    @include sprite($why-we4)
+.icon_why_we_5
+    display: inline-block
+    @include sprite($why-we5)
+.icon_why_we_6
+    display: inline-block
+    @include sprite($why-we6)
+.who_need_lp1:before
+    @include sprite($who-need-lp1)
+.who_need_lp2:before
+    @include sprite($who-need-lp2)
+.who_need_lp3:before
+    @include sprite($who-need-lp3)
+.who_need_lp4:before
+    @include sprite($who-need-lp4)
+.who_need_lp5:before
+    @include sprite($who-need-lp5)
+// End style icon
+
+// Start what_is_landing
+.what_is_landing
+    padding: 58px 0 116px
+    background: url(../img/what_is_landing_bg.jpg) repeat
+    .item
+        margin-top: 53px
+        text-align: center
+        i
+            margin-bottom: 17px
+        p
+            @include font($color_main, 14px, $font_RobotoRegular, 18px)
+            span
+                color: $color_red
+        .title
+            @include font($color_main, 20px, $font_RobotoBold)
+            margin-bottom: 5px
+// End what_is_landing
+// Start Why We
+.why_we
+    background: url(../img/why_we_bg.jpg) center top no-repeat
+    background-size: cover
+    padding: 60px 0 70px
+    h2
+        margin-bottom: 60px
+    .item
+        margin-bottom: 40px
+        i
+            vertical-align: middle
+            margin-right: 10px
+        p
+            display: inline-block
+            vertical-align: middle
+            @include font($color_red, 30px, $font_ROBOTO_BLACK, 24px)
+            span
+                @include font($color_main, 18px, $font_ROBOTO_BLACK, 24px)
+// End Why We
+// Start technologies_result
+.technologies_result
+    background: url(../img/bg_out_result.jpg) top center no-repeat
+    background-size: cover
+    padding: 71px 0 119px
+    h2
+        color: $color_white
+        line-height: 1.2
+        margin-bottom: 78px
+    .item
+        > div
+            background: rgba(84, 86, 86, 0.83)
+            border-radius: 5px
+            padding: 17px 10px 18px 20px
+            position: relative
+            &:before
+                @extend %before
+                @include sprite($red-arrow)
+                position: absolute
+                z-index: 2
+                top: 100%
+                left: 50%
+        &:nth-child(2) div:before
+            transform: scaleX(-1)
+            left: 30%
+        &:nth-child(5) div:before
+            transform: rotate(180deg)
+            left: 30%
+            bottom: 100%
+            top: auto
+        &:nth-child(6) div:before
+            transform: scaleY(-1)
+            bottom: 100%
+            top: auto
+        p
+            @include font($color_white, 12px, $font_RobotoRegular)
+        .title
+            @include font($color_white, 24px, $font_RobotoBold)
+    .col-lg-12
+        margin: 13px 0 -18px
+        text-align: center
+    .technologies_result_img
+        clear: both
+        padding: 13px 0 0 0
+
+// End technologies_result
+// Start who_need_lp
+.who_need_lp
+    background: url(../img/bg_who_need_lp.jpg) top center no-repeat
+    background-size: cover
+    padding: 70px 0 120px
+    h2
+        color: $color_white
+        line-height: 1.2
+        span
+            color: #fee1b8
+        &:after
+            background-color: #fee1b8
+    .who_need_lp_slider
+        margin-top: 24px
+        .owl-stage-outer
+            .item
+                position: relative
+                border-radius: 10px
+                background-color: rgba(252, 254, 250, 0.25)
+                text-align: center
+                padding: 25px 23px 25px 18px
+                border: 2px solid rgba(252, 254, 250, 0)
+                min-height: 369px
+                &:hover
+                    background: #fff
+                    border: 2px solid #FD4027
+                    p
+                        color: #434b52
+                    i
+                        background: $color_red
+                    .who_need_lp1:before
+                        @include sprite($who-need-lp1-hover)
+                    .who_need_lp2:before
+                        @include sprite($who-need-lp2-hover)
+                    .who_need_lp3:before
+                        @include sprite($who-need-lp3-hover)
+                    .who_need_lp4:before
+                        @include sprite($who-need-lp4-hover)
+                        height: 80px
+                    .who_need_lp5:before
+                        @include sprite($who-need-lp5-hover)
+                        width: 81px
+                        height: 80px
+                    button
+                        background: $color_red
+                i
+                    display: inline-block
+                    width: 131px
+                    height: 131px
+                    position: relative
+                    background-color: #434B52
+                    border-radius: 50%
+                    &:before
+                        @extend %before
+                        margin: auto
+                        position: absolute
+                        top: 0
+                        right: 0
+                        bottom: 0
+                        left: 0
+                p
+                    @include font(#fee1b8, 20px, $font_RobotoBold, 24px)
+                    margin-top: 10px
+                button
+                    position: absolute
+                    bottom: 25px
+                    left: 18px
+                    width: calc(100% - 40px)
+                    height: 50px
+                    border-radius: 5px
+                    background: #303c48
+                    border: none
+                    @include font($color_white, 20px, $font_RobotoRegular)
+                    outline: none
+        .owl-prev
+            @include sprite($slider-arrow)
+            position: absolute
+            top: calc(50% - 21px)
+            left: -8%
+            &:hover
+                @include sprite($slider-arrow-hover)
+        .owl-next
+            @include sprite($slider-arrow)
+            position: absolute
+            top: calc(50% - 21px)
+            right: -8%
+            transform: rotate(180deg)
+            &:hover
+                @include sprite($slider-arrow-hover)
+// End who_need_lp
+// Start examples_our_work
+.examples_our_work
+    background: url(../img/bg_portfolio.jpg) center top repeat-y
+    padding: 57px 0 120px
+    h2
+        margin-bottom: 60px
+    figure
+        padding: 5px
+        display: block
+        border-radius: 5px
+        img
+            display: block
+            width: 100%
+            vertical-align: top
+            border: 1px solid #696f75
+            border-radius: 5px
+        &.snip1321
+            position: relative
+            overflow: hidden
+            color: #000000
+            text-align: center
+            perspective: 50em
+            color: #fff
+            &:after
+                background-color: #303C48
+                position: absolute
+                content: ""
+                display: block
+                top: 5px
+                left: 5px
+                right: 5px
+                bottom: 5px
+                transition: all 0.4s ease-in-out
+                transform: rotateX(-90deg)
+                transform-origin: 50% 50%
+                opacity: 0
+                border-radius: 5px
+            &:hover
+                &:after
+                    transform: rotateX(0)
+                    opacity: 0.95
+                figcaption
+                    transform: translateY(-50%)
+                    opacity: 1
+                    transition-delay: 0.2s
+            *
+                box-sizing: padding-box
+                transition: all 0.2s ease-out
+            a
+                left: 0
+                right: 0
+                top: 0
+                bottom: 0
+                position: absolute
+                z-index: 1
+            i:before
+                content: ''
+                display: block
+                margin: 0 auto 20px
+                @include sprite($eye)
+            figcaption
+                top: 45%
+                left: 20px
+                right: 20px
+                position: absolute
+                opacity: 0
+                z-index: 1
+                padding: 0px 35px
+                h4
+                    font-size: 24px
+                    line-height: 1.1
+                    padding-bottom: 10px
+                    margin: 0
+                p
+                    margin: 0
+                    line-height: 1.2
+    .view-more
+        margin-top: 35px
+
+
+
+// Секия table_money
+
+.table_money
+    background-image: url(../img/bg_table_money.png)
+    img
+        margin: 1% 39%
+    h2
+        color: rgb(255,255,255)
+    h3
+        text-align: center
+        margin: 0px
+        font: 35px "RobotoBold"
+        color: rgb(255,255,255)
+    h4
+        text-align: center
+        font: 35px "RobotoBold"
+        margin: 5px 0px
+    li
+        list-style-type: none
+    .table_margin
+        margin: 60px 0px
+    .standart_head
+        margin-top: 20px
+        padding: 20px
+        border-radius: 10px 10px 0px 0px 
+        background-image: url(../img/bg_standart_head.jpg)
+        h4
+            color: #363737
+    .premium_head
+        padding: 20px 20px 40px 20px
+        box-shadow: 0px 3px 15px rgb(255,255,255)
+        border-radius: 10px 10px 0px 0px           
+        background-image: url(../img/bg_premium_head.jpg)
+        h4
+            color: #6a180e
+    .gold_head
+        margin-top: 20px
+        padding: 20px
+        border-radius: 10px 10px 0px 0px
+        background-image: url(../img/bg_gold_head.jpg)
+        h4
+            color: #4d402c
+    .standart
+        padding: 10px 0px
+        margin-top: -16px
+        background-image: url(../img/bg_standart.png)
+        border-radius: 0px 0px 10px 10px
+    .premium
+        padding:  10px 0px
+        box-shadow: 0px 3px 15px rgb(255,255,255)
+        margin-top: -16px
+        background-image: url(../img/bg_premium.png)
+        border-radius: 0px 0px 10px 10px
+    .gold_margin
+        margin-bottom: 16px !important
+    .ok
+        margin-bottom: 0px
+        color: #303c48
+        li:before
+            content: ''
+            display: inline-block
+            @include sprite($ok)
+            
+    .non
+        margin-top: 0px
+        color: #c3ccd4
+        li:before
+            content: ''
+            display: inline-block
+            @include sprite($non)
+            
+    button
+        margin: 10px  30px      
+// dop_geting
+
+.dop_geting
+    background-color: #fdfefa
+    text-align: center
+    i
+        margin: 0% 30%
+    .dop_i_1
+        display: inline-block
+        @include sprite($dop-1)
+    .dop_i_2
+        display: inline-block
+        @include sprite($dop-2)
+    .dop_i_3
+        display: inline-block
+        @include sprite($dop-3)
+    .dop_margin
+        margin: 30px 0px 60px 0px
+    span
+        color: #fd4027
+
+// Секия Calculate
+
+.calculate
+    background-image: url('../img/bg_calculate.jpg')
+    padding: 59px 0 81px
+    .select_service
+        display: none
+    h2
+        color: rgb(255,255,255)
+        margin-bottom: 58px
+    li
+        color: rgb(255,255,255)
+        list-style-type: none 
+        text-align: center
+    .col_custom_2
+        padding-top: 3px
+    .calculate_info
+        margin: 0
+        li
+            margin-bottom: 36px
+            &:first-child
+                margin-bottom: 40px
+    .calculate_inputs
+        padding-top: 66px
+        input
+            margin-bottom: 30px
+            padding-left: 20px
+    button
+        border: none
+        border-radius: 10px
+        width: 100px
+        outline: none
+        &.active
+            background: #f73e26
+            color: $color_white
+    .wrap_slide_input
+        display: none
+        &.active
+            display: block
+    .slide_calc_wrap
+        padding-top: 36px
+        display: none
+        &.active
+            display: block
+        .slide_item
+            margin-bottom: 33px
+            span
+                display: inline-block
+                vertical-align: top
+                padding-top: 2px
+                @include font($color_white, 14px, $font_RobotoRegular)
+                width: 24px
+        .custom_slider
+            width: 85%
+            height: 12px
+            display: inline-block
+            position: relative
+            background-color: #FFF
+            border: 1px solid #F00
+            box-shadow: inset 0.1px 2px 5px rgba(0, 0, 0, 0.19), inset 0 0 3px #FFF
+            border-radius: 10px
+            max-width: 350px
+            .wrap_handle
+                position: relative
+                width: calc(100% - 13px)
+            .ui-slider-handle
+                width: 18px
+                height: 18px
+                position: absolute
+                top: -3px
+                z-index: 2
+                background-color: #FFF  !important
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0) 100%) !important
+                border: none !important
+                box-shadow: inset 0 0 4px #2F3436 !important
+                margin-left: -2px
+                outline: none !important
+                border-radius: 50%
+                &:after
+                    @extend %before
+                    width: 6px
+                    height: 6px
+                    border-radius: 50%
+                    margin: auto
+                    position: absolute
+                    top: 0
+                    left: 0
+                    right: 0
+                    bottom: 0
+                    background: #2f3436
+                span
+                    display: inline-block
+                    text-align: center
+                    position: relative
+                    top: -24px
+                    left: calc(50% - 15px)
+                    width: 30px
+                    height: 15px
+                    background-color: #E5E5E5
+                    border: 1px solid #C8C8C8
+                    @include font(#2f3436, 11px, $font_RobotoRegular, 8px)
+                    border-radius: 2px
+                    &:after
+                        @extend %before
+                        width: 0
+                        height: 0
+                        border-style: solid
+                        border-width: 5px 3px 0 3px
+                        border-color: #E5E5E5 transparent transparent transparent
+                        position: absolute
+                        bottom: -5px
+                        left: calc(50% - 3px)
+        .ui-slider-range-min
+            position: relative
+            top: 2px
+            left: 2px
+            height: 6px
+            background-color: #FD4027
+            border: none
+            border-radius: 3px 0 0 3px
+        input
+            border: none
+            border-radius: 5px
+            width: 100px
+            outline: none
+            display: inline-block
+            margin-left: 20px
+            padding-left: 20px
+    .slide_result
+        p
+            @include font($color_red, 18px, $font_RobotoRegular)
+            margin-bottom: 30px
+            text-align: center
+            padding-right: 120px
+
+// Секия How we work
+
+.how_we_work
+    background-image: url('../img/bg_how_we_work.jpg') no-repeat center
+    i
+        position: absolute
+        display: inline-block
+        @include sprite($big-arrow)
+        margin-top: -150px 
+        margin-left: -40px
+        margin-bottom: -210px
+    .video-overlay 
+        position: absolute
+        width: 100%
+        background: url(../img/pattern.png) no-repeat center
+        background-size: cover   
+    video
+        display: inline-block
+        vertical-align: baseline
+        min-width: 100%
+        margin-top: -305px
+        min-height: 100%
+.scheme_work 
+    background-size: cover
+    padding-bottom: 30px
+.scheme_work .all-scheme 
+    max-width: 1000px
+    margin: 0 auto
+.scheme_work .tomato_line, .scheme_work .brown_line 
+    max-width: 500px
+.scheme_work .row > div 
+    position: relative
+    padding-left: 35px
+.scheme_work .row > div p 
+    text-align: center
+    font: 16px "RobotoBold"
+    color: #434b52
+    margin-left: -26px
+.scheme_work .row 
+    div p span 
+    color: #fd4027
+.title_block 
+    font-size: 17px
+    margin-top: -48px
+    margin-left: -20px
+    white-space: nowrap
+    span
+        color: #fd4027
+.scheme_work .row > div:after 
+    content: ''
+    display: block
+    width: 79px
+    height: 19px
+    background: url(../img/icon/arrow_how_we_work.png) no-repeat center
+    position: absolute
+    top: 100px
+    right: -32px
+.scheme_work .row > div:nth-child(4) 
+    width: 23%
+.scheme_work .row > div:nth-child(4) p 
+    margin-left: -2px
+.scheme_work .all-scheme .row:first-of-type 
+    margin-bottom: 90px
+.scheme_work .all-scheme .row:first-of-type > div:nth-child(4):after 
+    content: ''
+    background: url(../img/big_arrow_progress.png) no-repeat center
+    width: 1052px
+    height: 377px
+    right: -20px
+.scheme_work :last-of-type > div:last-child:after 
+    content: ''
+    display: none; 
+.scheme_work .number_process 
+    color: #fd4027
+    font: 30px "RobotoBold"
+    width: 90px
+    height: 90px
+    border: 1px dashed #fd4027
+    -webkit-border-radius: 100%
+    -moz-border-radius: 100%
+    -ms-border-radius: 100%
+    border-radius: 100%
+    overflow: hidden
+    line-height: 65px
+    padding-left: 20px 
+.scheme_work .for_icon 
+    background: #545656
+    -webkit-border-radius: 100%
+    -moz-border-radius: 100%
+    -ms-border-radius: 100%
+    border-radius: 100%
+    position: relative
+    width: 150px
+    height: 150px
+    top: -55px
+    left: 10px
+.scheme_work .for_icon img 
+    position: absolute
+    top: 0px
+    right: 0px
+    bottom: 0px
+    left: 0px
+    margin: auto
+
+
+
+// Секия Comments
+
+.comments
+    background-image: url('../img/bg_comments.jpg')
+.tips_up 
+    position: absolute
+    margin: -85px 0px 0px -30px
+
+.tips_down 
+    position: absolute
+    margin: 18px 0px 0px 437px
+
+
+.comment_slider .item
+    padding: 60px 30px 30px 30px
+    border-radius: 10px
+    max-width: 570px
+    margin: 55px 0px 60px 29px 
+    border: 2px solid #fd4027
+    background-color: #fdfefa
+
+.talk-about-us_photo 
+    border: 2px solid #fd4027
+    position: absolute
+    margin: -115px 0px 0px 200px
+    border-radius: 50%
+    height: 100px
+    width: 100px
+    background-image: url('../img/dog.bmp')
+
+
+// Секия LP
+
+.lp
+    text-align: center
+    background-image: url('../img/bg_lp.jpg')
+    color: rgb(255,255,255)
+    h2
+        font: 42px "IntroRegular" 
+        color: rgb(255,255,255)
+    strong
+        font: 20px "IntroRegular"
+    button
+        margin: 50px 0px
+    .lp_margin
+        margin: 55px 0px
+
+// Секия footer
+
+
+footer
+    background-image: url('../img/bg_footer.jpg')
+    height: 420px
+    flex: 0 0 auto  
+
+
+.foot_p
+    margin: 100px 0px
+    float: left
+    color: rgb(255,255,255)
+    font: 60px "RobotoBold" 
+    .foot_quest
+        letter-spacing: 1px
+        font: 70px "RobotoBold"
+        color: #fd4027
+
+.foot_link
+    margin: 110px 0px
+    float: right
+    a
+        color: rgb(255,255,255)
+        font: 28px "RobotoBold"
+.phone:before
+    content: ''
+    display: inline-block
+    @include sprite($foot-phone)
+.skype:before
+    content: ''
+    display: inline-block
+    @include sprite($foot-skype)
+.mail:before
+    content: ''
+    display: inline-block
+    @include sprite($foot-mail)
+
+.foot_danger
+    margin-bottom: 20px
+    text-align: center
+    color: rgb(255,255,255)
+
+//ALWAYS END
+@import "media"
+

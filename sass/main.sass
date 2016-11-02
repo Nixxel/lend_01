@@ -5,8 +5,7 @@
 // loads Libs SASS
 @import "app/libs/animate/animate.sass"
 @import "app/libs/owl.carousel/assets/owl.carousel.sass"
-@import "app/libs/jquery/jquery-ui.min"
- 
+
 *::-webkit-input-placeholder
 	color: #666
 	opacity: 1
@@ -395,7 +394,10 @@ body textarea:required:valid
             @include sprite($non)
             
     button
-        margin: 10px  30px      
+        margin: 10px  30px   
+
+    .owl-stage-outer
+        width: 100%
 // dop_geting
 
 .dop_geting
@@ -421,137 +423,22 @@ body textarea:required:valid
 
 .calculate
     background-image: url('../img/bg_calculate.jpg')
-    padding: 59px 0 81px
-    .select_service
-        display: none
     h2
-        color: rgb(255,255,255)
-        margin-bottom: 58px
+       color: rgb(255,255,255)
     li
         color: rgb(255,255,255)
         list-style-type: none 
         text-align: center
-    .col_custom_2
-        padding-top: 3px
-    .calculate_info
-        margin: 0
-        li
-            margin-bottom: 36px
-            &:first-child
-                margin-bottom: 40px
-    .calculate_inputs
-        padding-top: 66px
-        input
-            margin-bottom: 30px
-            padding-left: 20px
     button
         border: none
         border-radius: 10px
         width: 100px
         outline: none
-        &.active
-            background: #f73e26
-            color: $color_white
-    .wrap_slide_input
-        display: none
-        &.active
-            display: block
-    .slide_calc_wrap
-        padding-top: 36px
-        display: none
-        &.active
-            display: block
-        .slide_item
-            margin-bottom: 33px
-            span
-                display: inline-block
-                vertical-align: top
-                padding-top: 2px
-                @include font($color_white, 14px, $font_RobotoRegular)
-                width: 24px
-        .custom_slider
-            width: 85%
-            height: 12px
-            display: inline-block
-            position: relative
-            background-color: #FFF
-            border: 1px solid #F00
-            box-shadow: inset 0.1px 2px 5px rgba(0, 0, 0, 0.19), inset 0 0 3px #FFF
-            border-radius: 10px
-            max-width: 350px
-            .wrap_handle
-                position: relative
-                width: calc(100% - 13px)
-            .ui-slider-handle
-                width: 18px
-                height: 18px
-                position: absolute
-                top: -3px
-                z-index: 2
-                background-color: #FFF  !important
-                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0) 100%) !important
-                border: none !important
-                box-shadow: inset 0 0 4px #2F3436 !important
-                margin-left: -2px
-                outline: none !important
-                border-radius: 50%
-                &:after
-                    @extend %before
-                    width: 6px
-                    height: 6px
-                    border-radius: 50%
-                    margin: auto
-                    position: absolute
-                    top: 0
-                    left: 0
-                    right: 0
-                    bottom: 0
-                    background: #2f3436
-                span
-                    display: inline-block
-                    text-align: center
-                    position: relative
-                    top: -24px
-                    left: calc(50% - 15px)
-                    width: 30px
-                    height: 15px
-                    background-color: #E5E5E5
-                    border: 1px solid #C8C8C8
-                    @include font(#2f3436, 11px, $font_RobotoRegular, 8px)
-                    border-radius: 2px
-                    &:after
-                        @extend %before
-                        width: 0
-                        height: 0
-                        border-style: solid
-                        border-width: 5px 3px 0 3px
-                        border-color: #E5E5E5 transparent transparent transparent
-                        position: absolute
-                        bottom: -5px
-                        left: calc(50% - 3px)
-        .ui-slider-range-min
-            position: relative
-            top: 2px
-            left: 2px
-            height: 6px
-            background-color: #FD4027
-            border: none
-            border-radius: 3px 0 0 3px
-        input
-            border: none
-            border-radius: 5px
-            width: 100px
-            outline: none
-            display: inline-block
-            margin-left: 20px
-            padding-left: 20px
-    .slide_result
-        p
-            @include font($color_red, 18px, $font_RobotoRegular)
-            margin-bottom: 30px
-            text-align: center
-            padding-right: 120px
-
+    input
+        border: none
+        border-radius: 5px
+        width: 100px
+        outline: none
 // Секия How we work
 
 .how_we_work
@@ -710,7 +597,7 @@ body textarea:required:valid
 
 footer
     background-image: url('../img/bg_footer.jpg')
-    height: 420px
+    height: 100%
     flex: 0 0 auto  
 
 

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .owl-carousel,.owl-carousel .owl-item{-webkit-tap-highlight-color:transparent;position:relative}
 .ui-widget-content a,.ui-widget-header,.ui-widget-header a{color:#333}
 .ui-icon,.why_we .item i,.why_we .item p{vertical-align:middle}
@@ -999,8 +998,9 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .table_money .ok li:before{background-position:-996px -368px}
 .table_money .non{margin-top:0;color:#c3ccd4}
 .table_money .non li:before{background-position:-1007px -368px}
-.dop_geting .dop_i_1,.dop_geting .dop_i_2,.dop_geting .dop_i_3{display:inline-block;background-image:url(../img/sprite.png);width:103px;height:103px}
 .table_money button{margin:10px 30px}
+.table_money .owl-stage-outer{width:100%}
+.dop_geting .dop_i_1,.dop_geting .dop_i_2,.dop_geting .dop_i_3{display:inline-block;background-image:url(../img/sprite.png);width:103px;height:103px}
 .dop_geting{background-color:#fdfefa;text-align:center}
 .dop_geting i{margin:0 30%}
 .dop_geting .dop_i_1{background-position:-89px -498px}
@@ -1084,13 +1084,17 @@ h2:after{width:420px;left:-webkit-calc(50% - 210px);left:calc(50% - 210px)}
 .header_nav{margin:27px 0 0 8%}
 .why_we .item p{font-size:29px}
 figure.snip1321 figcaption{padding:0 20px}
-.calculate button{width:98px}
-.calculate .slide_calc_wrap .custom_slider{width:81%;max-width:225px}
+.table_slider{display:none}
 }
-@media only screen and (max-width:992px){.icon_investments,.icon_payback{height:69px;display:inline-block;background-image:url(../img/sprite.png)}
-.icon_investments{background-position:-144px -719px;width:68px}
-.icon_payback{background-position:-212px -719px;width:64px}
-.icon_clock{display:inline-block;background-image:url(../img/sprite.png);background-position:-927px -601px;width:68px;height:71px}
+@media only screen and (max-width:992px){.table_money button{width:280px}
+.table_money img{margin:1% 35%}
+.how_we_work i{display:none}
+.icon_clock,.icon_investments,.icon_payback{display:inline-block;background-image:url(../img/sprite.png)}
+.lp strong{font:16px IntroRegular}
+.lp .lp_margin{margin:30px 0}
+.icon_investments{background-position:-144px -719px;width:68px;height:69px}
+.icon_payback{background-position:-212px -719px;width:64px;height:69px}
+.icon_clock{background-position:-927px -601px;width:68px;height:71px}
 .icon_why_we_1,.icon_why_we_2,.icon_why_we_3,.icon_why_we_4,.icon_why_we_5,.icon_why_we_6{display:inline-block;background-image:url(../img/sprite.png);width:100px;height:100px}
 .icon_why_we_1{background-position:-498px -498px}
 .icon_why_we_2{background-position:-398px -498px}
@@ -1104,6 +1108,7 @@ figure.snip1321 figcaption{padding:0 20px}
 .header_nav{width:100%;position:absolute;top:100%;left:-100%;-webkit-transition:left 1s;transition:left 1s;background:rgba(0,0,0,.8);border-top:1px solid #fff;margin:0;padding:10px 0 20px}
 .header_nav.active{left:0;-webkit-transition:left 1s;transition:left 1s}
 .header_nav li{display:block;width:100%;text-align:center;margin:10px 0}
+.comments .tips_down,.comments .tips_up,.who_need_lp .owl-controls{display:none}
 .header_form{margin-top:70px}
 .header_form input[type=submit],.header_form input[type=text]{font-size:16px;height:45px}
 .what_is_landing{padding:38px 0 66px}
@@ -1112,16 +1117,31 @@ figure.snip1321 figcaption{padding:0 20px}
 .why_we .item p{font-size:20px}
 .why_we .item p span{font-size:16px}
 .technologies_result .item .title{font-size:20px}
-.who_need_lp .owl-controls{display:none}
+.comments .talk-about-us_photo{margin-left:130px}
 .examples_our_work .view-more{width:100%;font-size:16px;height:45px}
-.calculate .calculate_info{padding:0}
+footer .foot_p{margin:60px 0;font:50px RobotoBold}
+footer .foot_p .foot_quest{font:58px RobotoBold}
+footer .foot_link{margin:60px 0}
+footer .foot_link a{font:18px RobotoBold}
 }
-@media only screen and (max-width:768px){.calculate .slide_calc_wrap .slide_item div,.calculate .slide_calc_wrap .slide_item span,.technologies_result .item div:before{display:none}
+@media only screen and (max-width:768px){.scheme_work .row div p,.scheme_work .row>div:nth-child(4) p{margin-left:-100px}
+.scheme_work .row>div:nth-child(4),h2:after{width:50%}
+.scheme_work .row div:after{background:0 0}
+.padd{padding-left:80px!important}
+.calculate{display:none}
+.table_slider .item{margin:0 25%;width:50%}
 .animated{-webkit-transition-property:none!important;transition-property:none!important;-ms-transform:none!important;-webkit-transform:none!important;transform:none!important;-webkit-animation:none!important;animation:none!important}
 h1{font-size:35px}
 h1 span{font-size:30px}
 h2{font-size:27px}
-h2:after{width:50%;left:25%}
+h2:after{left:25%}
+.comments .tips_up{display:inline}
+.comments .tips_down{display:inline;margin:18px 0 0 477px}
+.calculate .slide_calc_wrap .slide_item div,.calculate .slide_calc_wrap .slide_item span,.technologies_result .item div:before{display:none}
+.comments .talk-about-us_photo{margin-left:210px}
+.lp strong{font:12px IntroRegular}
+.lp .lp_margin{margin:20px 0}
+.lp button{margin:25px}
 .modal_input_error{margin-right:10%}
 .header{padding-top:80px;padding-bottom:100px}
 .examples_our_work,.technologies_result,.who_need_lp{padding:40px 0 50px}
@@ -1130,40 +1150,49 @@ h2:after{width:50%;left:25%}
 .header .button_go_portfolio{margin-bottom:20px!important}
 .why_we .item{width:70%;margin-left:auto;margin-right:auto}
 .technologies_result .item div{margin-bottom:20px}
+footer .foot_p{margin:30px 0;font:35px RobotoBold}
+footer .foot_p .foot_quest{font:40px RobotoBold}
+footer .foot_link{margin:30px 0}
+footer .foot_link a{font:18px RobotoBold}
 .calculate .col_custom_2{text-align:center}
 .calculate .slide_calc_wrap .slide_item input{display:table;margin-left:auto;margin-right:auto}
 .calculate .slide_result p{padding-right:0}
 }
-@media only screen and (max-width:670px){.calculate .slide_calc_wrap .slide_item{margin-bottom:28px}
-.calculate .calculate_info li{font-size:14px}
-}
-@media only screen and (max-width:575px){.calculate .slide_calc_wrap{padding-top:0}
-.calculate .slide_calc_wrap .slide_item{margin-bottom:28px}
-.calculate .calculate_info_wrap,.calculate .col_custom_2{width:50%}
-.calculate .calculate_info li{font-size:16px;margin-bottom:30px}
-.calculate .calculate_info li:first-child{margin-bottom:30px}
-.calculate .calculate_info_button button{display:none}
-.calculate .select_service{position:relative;width:100px;display:inline-block;margin:0 auto 28px}
-.calculate .select_service p{-webkit-border-radius:5px;border-radius:5px;width:100px;display:inline-block;text-align:left;padding:3px 0 2px 10px;background:#fff;position:relative;font-size:14px}
-.calculate .select_service p.active:after{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg);-webkit-transition:all .5s;transition:all .5s}
-.calculate .select_service p:after{content:'▼';display:inline-block;position:absolute;right:6px;top:7px;color:#545656;font:10px RobotoLight,Arial,sans-serif;line-height:1.6;-webkit-transition:all .5s;transition:all .5s}
-.calculate .select_service ul{display:none;position:absolute;width:100px;left:0;top:25px;padding:0;margin:0;background:rgba(0,0,0,.9);text-align:center}
-.calculate .select_service ul li{font-size:14px;margin:7px 0}
-.calculate .select_service ul li.active{color:#fd4027}
-}
-@media only screen and (max-width:620px){.dm-modal{width:90%}
+@media only screen and (max-width:620px){.scheme_work .row div p,.scheme_work .row>div:nth-child(4) p{margin-left:-60px}
+footer .foot_p{margin:30px 0;font:45px RobotoBold}
+footer .foot_p .foot_quest{font:50px RobotoBold}
+footer .foot_link{margin:70px 0}
+footer .foot_link a{font:22px RobotoBold}
+.lp p,.lp strong{display:none}
+.table_slider .item{margin:0 20%;width:60%}
+.dm-modal{width:90%}
 .dm-modal .form_title{font-size:25px}
 .dm-modal input,.dm-modal input[type=submit]{height:45px;font-size:14px}
-.calculate .calculate_info_button{margin-bottom:10px}
-.calculate .slide_calc_wrap .slide_item{height:50px;margin-bottom:20px}
-.calculate .calculate_info li{font-size:16px;min-height:50px;margin-bottom:20px}
-.calculate .calculate_info li:first-child{margin-bottom:10px}
 }
-@media only screen and (max-width:480px){.why_we .item{width:100%}
+@media only screen and (max-width:480px){.comments .tips_up{display:none}
+.comments .talk-about-us_photo{margin-left:130px!important}
+.scheme_work .row div p,.scheme_work .row>div:nth-child(4) p{margin-left:0}
+footer .foot_p{margin:30px 0;font:40px RobotoBold}
+footer .foot_p .foot_quest{font:45px RobotoBold}
+footer .foot_link{margin:70px 0}
+footer .foot_link a{font:17px RobotoBold}
+.table_slider .item{margin:0 10%;width:80%}
+.why_we .item{width:100%}
 }
-@media only screen and (max-width:400px){.header_info{display:none}
+@media only screen and (max-width:400px){.header_info,footer .foot_p{display:none}
+.comments .talk-about-us_photo{margin-left:90px!important}
+.padd{padding-left:30px!important}
+footer .foot_link{width:300px;margin-right:5%}
+footer .foot_link a{font:26px RobotoBold}
+.table_slider .item{margin:0;width:100%}
 .dm-modal{padding:50px 20px 30px}
 .examples_our_work .view-more-block figure{width:100%}
+}
+@media only screen and (max-width:320px){.lp button,.table_slider button{width:80%}
+.comments .talk-about-us_photo{margin-left:50px!important}
+.padd{padding-left:5px!important}
+.lp h2{font:35px IntroRegular}
+.table_slider ul{padding-left:5px}
 }
 @media only screen and (min-width:993px){.header_nav{display:inline-block!important}
 }

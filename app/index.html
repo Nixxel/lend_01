@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Заголовок</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Bootstrap v3.3.4 Grid Styles -->
+    <style>
+        html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1,.col-sm-1,.col-md-1,.col-lg-1,.col-xs-2,.col-sm-2,.col-md-2,.col-lg-2,.col-xs-3,.col-sm-3,.col-md-3,.col-lg-3,.col-xs-4,.col-sm-4,.col-md-4,.col-lg-4,.col-xs-5,.col-sm-5,.col-md-5,.col-lg-5,.col-xs-6,.col-sm-6,.col-md-6,.col-lg-6,.col-xs-7,.col-sm-7,.col-md-7,.col-lg-7,.col-xs-8,.col-sm-8,.col-md-8,.col-lg-8,.col-xs-9,.col-sm-9,.col-md-9,.col-lg-9,.col-xs-10,.col-sm-10,.col-md-10,.col-lg-10,.col-xs-11,.col-sm-11,.col-md-11,.col-lg-11,.col-xs-12,.col-sm-12,.col-md-12,.col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right!important}.pull-left{float:left!important}.hide{display:none!important}.show{display:block!important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none!important}.affix{position:fixed}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none!important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none!important}@media (max-width:767px){.visible-xs{display:block!important}table.visible-xs{display:table}tr.visible-xs{display:table-row!important}th.visible-xs,td.visible-xs{display:table-cell!important}.visible-xs-block{display:block!important}.visible-xs-inline{display:inline!important}.visible-xs-inline-block{display:inline-block!important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block!important}table.visible-sm{display:table}tr.visible-sm{display:table-row!important}th.visible-sm,td.visible-sm{display:table-cell!important}.visible-sm-block{display:block!important}.visible-sm-inline{display:inline!important}.visible-sm-inline-block{display:inline-block!important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block!important}table.visible-md{display:table}tr.visible-md{display:table-row!important}th.visible-md,td.visible-md{display:table-cell!important}.visible-md-block{display:block!important}.visible-md-inline{display:inline!important}.visible-md-inline-block{display:inline-block!important}}@media (min-width:1200px){.visible-lg{display:block!important}table.visible-lg{display:table}tr.visible-lg{display:table-row!important}th.visible-lg,td.visible-lg{display:table-cell!important}}@media (min-width:1200px){.visible-lg-block{display:block!important}}@media (min-width:1200px){.visible-lg-inline{display:inline!important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block!important}}@media (max-width:767px){.hidden-xs{display:none!important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none!important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none!important}}@media (min-width:1200px){.hidden-lg{display:none!important}}.visible-print{display:none!important}@media print{.visible-print{display:block!important}table.visible-print{display:table}tr.visible-print{display:table-row!important}th.visible-print,td.visible-print{display:table-cell!important}}.visible-print-block{display:none!important}@media print{.visible-print-block{display:block!important}}.visible-print-inline{display:none!important}@media print{.visible-print-inline{display:inline!important}}.visible-print-inline-block{display:none!important}@media print{.visible-print-inline-block{display:inline-block!important}}@media print{.hidden-print{display:none!important}}
+    </style>
+    <!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+    <style>
+    html .loader {
+        background: #fff;
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 9999
+    }
+    
+    html .loader .loader_inner {
+        background-image: url(../img/preloader.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #fff;
+        height: 60px;
+        width: 60px;
+        margin-top: -30px;
+        margin-left: -30px;
+        left: 50%;
+        top: 50%;
+        position: absolute
+    }
+    </style>
+    <!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+    <script>
+    ! function(e) {
+        "use strict";
+
+        function t(e, t, n) {
+            e.addEventListener ? e.addEventListener(t, n, !1) : e.attachEvent && e.attachEvent("on" + t, n)
+        }
+
+        function n(t, n) {
+            return e.localStorage && localStorage[t + "_content"] && localStorage[t + "_file"] === n
+        }
+
+        function a(t, a) {
+            if (e.localStorage && e.XMLHttpRequest) n(t, a) ? o(localStorage[t + "_content"]) : l(t, a);
+            else {
+                var s = r.createElement("link");
+                s.href = a, s.id = t, s.rel = "stylesheet", s.type = "text/css", r.getElementsByTagName("head")[0].appendChild(s), r.cookie = t
+            }
+        }
+
+        function l(e, t) {
+            var n = new XMLHttpRequest;
+            n.open("GET", t, !0), n.onreadystatechange = function() {
+                4 === n.readyState && 200 === n.status && (o(n.responseText), localStorage[e + "_content"] = n.responseText, localStorage[e + "_file"] = t)
+            }, n.send()
+        }
+
+        function o(e) {
+            var t = r.createElement("style");
+            t.setAttribute("type", "text/css"), r.getElementsByTagName("head")[0].appendChild(t), t.styleSheet ? t.styleSheet.cssText = e : t.innerHTML = e
+        }
+        var r = e.document;
+        e.loadCSS = function(e, t, n) {
+            var a, l = r.createElement("link");
+            if (t) a = t;
+            else {
+                var o;
+                o = r.querySelectorAll ? r.querySelectorAll("style,link[rel=stylesheet],script") : (r.body || r.getElementsByTagName("head")[0]).childNodes, a = o[o.length - 1]
+            }
+            var s = r.styleSheets;
+            l.rel = "stylesheet", l.href = e, l.media = "only x", a.parentNode.insertBefore(l, t ? a : a.nextSibling);
+            var c = function(e) {
+                for (var t = l.href, n = s.length; n--;)
+                    if (s[n].href === t) return e();
+                setTimeout(function() {
+                    c(e)
+                })
+            };
+            return l.onloadcssdefined = c, c(function() {
+                l.media = n || "all"
+            }), l
+        }, e.loadLocalStorageCSS = function(l, o) {
+            n(l, o) || r.cookie.indexOf(l) > -1 ? a(l, o) : t(e, "load", function() {
+                a(l, o)
+            })
+        }
+    }(this);
+    </script>
+    <!-- Load CSS Start -->
+    <script>
+    loadLocalStorageCSS("webfonts", "css/fonts.min.css?ver=1.0.0");
+    </script>
+    <script>
+    loadCSS("css/header.min.css?ver=1.0.0", false, "all");
+    </script>
+    <script>
+    loadCSS("css/main.min.css?ver=1.0.0", false, "all");
+    </script>
+    <!-- Load CSS End -->
+    <!-- Load CSS Compiled without JS -->
+    <noscript>
+        <link rel="stylesheet" href="css/fonts.min.css">
+        <link rel="stylesheet" href="css/main.min.css">
+    </noscript>
+</head>
+
+<body>
+    <div class="loader">
+        <div class="loader_inner"></div>
+    </div>
+    <!-- Модальное окно заказать звонок -->
+    <div class="popup" id="win" data-modal="modal-1">
+        <div class="dm-table">
+            <div class="dm-cell">
+                <div class="dm-modal">
+                    <a href="#" class="close">
+                    </a>
+                    <p class='sucess_mail'>Заявка отправлена</p>
+                    <form id="form">
+                        <div class="form_title">ЗАПОЛНИТЕ ФОРМУ</div>
+                        <div>
+                            <div class="modal_form_input_wrap">
+                                <div class="modal_input_error">Заполните поле
+                                    <div class="modal_error_triangle"></div>
+                                    <div class="modal_error_chest_img"></div>
+                                </div>
+                                <input name="name" class="modal_form_input" placeholder="Ваше имя" type="text">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="modal_form_input_wrap">
+                                <div class="modal_input_error">Заполните поле
+                                    <div class="modal_error_triangle"></div>
+                                    <div class="modal_error_chest_img"></div>
+                                </div>
+                                <input name="phone" class="modal_form_phone" placeholder="Ваш телефон" type="text">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="modal_form_input_wrap">
+                                <div class="modal_input_error">Заполните поле
+                                    <div class="modal_error_triangle"></div>
+                                    <div class="modal_error_chest_img"></div>
+                                </div>
+                                <input name="email" class="modal_form_email" placeholder="Ваш e-mail" type="text">
+                            </div>
+                        </div>
+                        <input type="hidden" name="form_name" value="">
+                        <input type="hidden" name="form_type" value="modal">
+                        <input type="submit" value="Отправить">
+                        <p class="information_transmitted">Информация не передается третьим лицам</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="overlay">
+        </div>
+    </div>
+    <div class="popup" data-modal="modal-res">
+        <div class="dm-table">
+            <div class="dm-cell">
+                <div class="dm-modal">
+                    <a href="#" class="close">
+                    </a>
+                    <p class='res_mail'>Заявка отправлена</p>
+                </div>
+            </div>
+        </div>
+        <div class="overlay">
+        </div>
+    </div>
+
+    <!-- Здесь пишем код -->
+    <div class="fixed_menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 clearfix">
+                    <div class="header_logo">
+                        <a href="/">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448.5 183" enable-background="new 0 0 448.5 183" xml:space="preserve">
+                            <g>
+                                <defs>
+                                    <rect id="SVGID_39_" x="-214.5" y="-314.3" width="1037.8" height="1718.6"></rect>
+                                </defs>
+                                <clipPath id="SVGID_40_">
+                                    <use xlink:href="#SVGID_39_" overflow="visible"></use>
+                                </clipPath>
+                                <polygon clip-path="url(#SVGID_40_)" fill="#FFFFFF" points="226.5,60.8 226.5,107.6 223.8,107.6 223.8,63.7 205.7,87.4
+                                    187.6,63.7 187.6,107.6 184.9,107.6 184.9,60.8 188.8,60.8 205.7,83 222.6,60.8 	"></polygon>
+                                <polygon clip-path="url(#SVGID_40_)" fill="#FFFFFF" points="260,60.8 260,63.5 239.3,63.5 239.3,82.9 260,82.9 260,85.5
+                                    239.3,85.5 239.3,104.9 260,104.9 260,107.6 236.6,107.6 236.6,60.8 	"></polygon>
+                                <polygon clip-path="url(#SVGID_40_)" fill="#FFFFFF" points="270.8,107.6 270.8,60.8 273.5,60.8 273.5,104.9 291.3,104.9
+                                    291.3,107.6 	"></polygon>
+                                <polygon clip-path="url(#SVGID_40_)" fill="#FFFFFF" points="320.6,60.8 320.6,63.5 302.8,63.5 302.8,82.9 320.6,82.9 320.6,85.5
+                                    302.8,85.5 302.8,107.6 300.1,107.6 300.1,60.8 	"></polygon>
+                                <path clip-path="url(#SVGID_40_)" fill="#FFFFFF" d="M368.7,67.2c4.7,4.7,7,10.3,7,17c0,6.6-2.3,12.3-7,17c-4.7,4.7-10.3,7-17,7
+                                    c-6.6,0-12.3-2.3-17-7c-4.7-4.7-7-10.4-7-17c0-6.6,2.3-12.3,7-17c4.7-4.7,10.3-7,17-7C358.4,60.1,364,62.5,368.7,67.2 M351.7,62.8
+                                    c-5.9,0-10.9,2.1-15.1,6.3c-4.2,4.2-6.3,9.2-6.3,15.1c0,5.9,2.1,10.9,6.3,15.1c4.2,4.2,9.2,6.3,15.1,6.3c5.9,0,10.9-2.1,15.1-6.3
+                                    c4.2-4.2,6.3-9.2,6.3-15.1c0-5.9-2.1-10.9-6.3-15.1C362.7,64.9,357.6,62.8,351.7,62.8"></path>
+                                <path clip-path="url(#SVGID_40_)" fill="#FFFFFF" d="M396.3,91.4h-8.7v16.2h-2.6V60.8h12.3c3.6,0.5,6.6,2,9.1,4.5
+                                    c3,3,4.5,6.6,4.5,10.8c0,4.2-1.5,7.8-4.5,10.8c-2.1,2.1-4.4,3.4-7.1,4.1l10.8,16.6h-3.2L396.3,91.4z M387.6,63.5v25.2h7.9
+                                    c3.5,0,6.4-1.2,8.9-3.7c2.5-2.5,3.7-5.4,3.7-8.9c0-3.5-1.2-6.5-3.7-8.9c-2.5-2.4-5.4-3.7-8.9-3.7H387.6z"></path>
+                                <rect x="420.4" y="60.8" clip-path="url(#SVGID_40_)" fill="#FFFFFF" width="2.6" height="46.8"></rect>
+                            </g>
+                            <g>
+                                <defs>
+                                    <path id="SVGID_41_" d="M101.7,47.1l-29,29c-0.1,0.1-0.1,0.2,0,0.2l2.8,2.8c0.1,0.1,0.2,0.1,0.2,0L101.8,53l6.2,6.2L81.9,85.3
+                                        c-0.1,0.1-0.1,0.2,0,0.2l2.8,2.8c0.1,0.1,0.2,0.1,0.2,0l29-29c0.1-0.1,0.1-0.1,0-0.2l-12-12C101.9,47.1,101.8,47.1,101.7,47.1
+                                        C101.8,47.1,101.7,47.1,101.7,47.1 M88.1,33.5l-29,29c-0.1,0.1-0.1,0.1,0,0.2l2.8,2.8c0.1,0.1,0.2,0.1,0.2,0l26.1-26.1l6.2,6.2
+                                        L68.3,71.6c-0.1,0.1-0.1,0.2,0,0.2l2.8,2.8c0.1,0.1,0.1,0.1,0.2,0l29-29c0.1-0.1,0.1-0.1,0-0.2l-12-12
+                                        C88.2,33.4,88.2,33.4,88.1,33.5C88.1,33.4,88.1,33.4,88.1,33.5 M88,24.7L54.7,58c-0.1,0.1-0.1,0.2,0,0.2l2.8,2.8
+                                        c0.1,0.1,0.1,0.1,0.2,0l30.4-30.4l28.6,28.6L86.3,89.7c-0.1,0.1-0.1,0.2,0,0.2l2.8,2.8c0.1,0.1,0.1,0.1,0.2,0l33.3-33.3
+                                        c0.1-0.1,0.1-0.1,0-0.2L88.3,24.7c0,0-0.1,0-0.1,0C88.1,24.7,88.1,24.7,88,24.7"></path>
+                                </defs>
+                                <clipPath id="SVGID_42_">
+                                    <use xlink:href="#SVGID_41_" overflow="visible"></use>
+                                </clipPath>
+                                <rect x="54.6" y="24.7" clip-path="url(#SVGID_42_)" fill="#FFFFFF" width="68.1" height="68.1"></rect>
+                            </g>
+                            <g>
+                                <defs>
+                                    <path id="SVGID_43_" d="M34.7,78l-2.8,2.8c-0.1,0.1-0.1,0.1,0,0.2L59,108.1l-5.8,5.8L26.2,86.8c-0.1-0.1-0.2-0.1-0.2,0l-2.8,2.8
+                                        c-0.1,0.1-0.1,0.1,0,0.2l30,30c0.1,0.1,0.1,0.1,0.2,0l11.5-11.5c0.1-0.1,0.1-0.1,0-0.2l-30-30C34.8,78,34.8,78,34.7,78
+                                        C34.7,78,34.7,78,34.7,78 M47.8,64.9L45,67.7c-0.1,0.1-0.1,0.1,0,0.2L72.1,95l-5.8,5.8L39.3,73.7c-0.1-0.1-0.2-0.1-0.2,0l-2.8,2.8
+                                        c-0.1,0.1-0.1,0.1,0,0.2l30,30c0.1,0.1,0.1,0.1,0.2,0L78,95.1c0.1-0.1,0.1-0.1,0-0.2l-30-30C47.9,64.9,47.9,64.9,47.8,64.9
+                                        C47.8,64.9,47.8,64.9,47.8,64.9 M52.1,60.6l-2.8,2.8c-0.1,0.1-0.1,0.1,0,0.2l31.5,31.5l-27.6,27.6L21.8,91.1
+                                        c-0.1-0.1-0.2-0.1-0.2,0l-2.8,2.8c-0.1,0.1-0.1,0.1,0,0.2l34.4,34.4c0.1,0.1,0.1,0.1,0.2,0l33.3-33.3c0.1-0.1,0.1-0.2,0-0.2
+                                        L52.4,60.6c0,0-0.1-0.1-0.1-0.1C52.2,60.5,52.2,60.5,52.1,60.6"></path>
+                                </defs>
+                                <clipPath id="SVGID_44_">
+                                    <use xlink:href="#SVGID_43_" overflow="visible"></use>
+                                </clipPath>
+                                <rect x="18.8" y="60.5" clip-path="url(#SVGID_44_)" fill="#FFFFFF" width="68.1" height="68.1"></rect>
+                            </g>
+                            <g>
+                                <defs>
+                                    <path id="SVGID_45_" d="M103,120.2l-29,29c-0.1,0.1-0.1,0.1,0,0.2l2.8,2.8c0.1,0.1,0.2,0.1,0.2,0l26.1-26.1l6.2,6.2l-26.1,26.1
+                                        c-0.1,0.1-0.1,0.2,0,0.2l2.8,2.8c0.1,0.1,0.1,0.1,0.2,0l29-29c0.1-0.1,0.1-0.1,0-0.2l-12-12C103.2,120.1,103.2,120.1,103,120.2
+                                        C103.1,120.1,103.1,120.1,103,120.2 M89.4,106.5l-29,29c-0.1,0.1-0.1,0.2,0,0.2l2.8,2.8c0.1,0.1,0.2,0.1,0.2,0l26.1-26.1l6.2,6.2
+                                        l-26.1,26.1c-0.1,0.1-0.1,0.2,0,0.2l2.8,2.8c0.1,0.1,0.2,0.1,0.2,0l29-29c0-0.1,0-0.1,0-0.2l-12-12
+                                        C89.6,106.5,89.5,106.5,89.4,106.5C89.4,106.5,89.4,106.5,89.4,106.5 M89.4,97.8l-33.3,33.3c-0.1,0.1-0.1,0.1,0,0.2l2.8,2.8
+                                        c0.1,0.1,0.2,0.1,0.2,0l30.4-30.4l28.6,28.6l-30.4,30.4c-0.1,0.1-0.1,0.1,0,0.2l2.8,2.8c0.1,0.1,0.2,0.1,0.2,0l33.3-33.3
+                                        c0.1-0.1,0.1-0.2,0-0.2L89.6,97.8c0,0-0.1,0-0.1,0C89.4,97.7,89.4,97.8,89.4,97.8"></path>
+                                </defs>
+                                <clipPath id="SVGID_46_">
+                                    <use xlink:href="#SVGID_45_" overflow="visible"></use>
+                                </clipPath>
+                                <rect x="56" y="97.7" clip-path="url(#SVGID_46_)" fill="#FFFFFF" width="68.1" height="68.1"></rect>
+                            </g>
+                            <g>
+                                <defs>
+                                    <path id="SVGID_47_" d="M112.2,83.8l-11.5,11.5c-0.1,0.1-0.1,0.1,0,0.2l30,30c0.1,0.1,0.1,0.1,0.2,0l2.8-2.8
+                                        c0.1-0.1,0.1-0.2,0-0.2l-27.1-27.1l5.8-5.8l27.1,27.1c0.1,0.1,0.2,0.1,0.2,0l2.8-2.8c0.1-0.1,0.1-0.1,0-0.2l-30-30
+                                        C112.4,83.8,112.3,83.8,112.2,83.8C112.3,83.8,112.2,83.8,112.2,83.8 M125.3,70.7l-11.5,11.5c-0.1,0.1-0.1,0.1,0,0.2l30,30
+                                        c0.1,0.1,0.1,0.1,0.2,0l2.8-2.8c0.1-0.1,0.1-0.2,0-0.2l-27.1-27.1l5.8-5.8l27.1,27.1c0.1,0.1,0.2,0.1,0.2,0l2.8-2.8
+                                        c0.1-0.1,0.1-0.1,0-0.2l-30-30C125.5,70.7,125.4,70.7,125.3,70.7C125.4,70.7,125.3,70.7,125.3,70.7 M125.3,62L91.9,95.3
+                                        c-0.1,0.1-0.1,0.2,0,0.2l34.4,34.4c0.1,0.1,0.2,0.1,0.2,0l2.8-2.8c0.1-0.1,0.1-0.2,0-0.2L97.8,95.4l27.6-27.6l31.5,31.5
+                                        c0.1,0.1,0.2,0.1,0.2,0l2.8-2.8c0.1-0.1,0.1-0.2,0-0.2L125.5,62c0,0-0.1-0.1-0.1-0.1C125.3,61.9,125.3,61.9,125.3,62"></path>
+                                </defs>
+                                <clipPath id="SVGID_48_">
+                                    <use xlink:href="#SVGID_47_" overflow="visible"></use>
+                                </clipPath>
+                                <rect x="91.9" y="61.9" clip-path="url(#SVGID_48_)" fill="#FFFFFF" width="68.1" height="68.1"></rect>
+                            </g>
+                        </svg>
+                        </a>
+                    </div>
+                    <nav class="header_nav">
+                        <ul>
+                            <li><a href="#home">ГЛАВНАЯ</a></li>
+                            <li><a href="#what_is_landing">УСЛУГИ</a></li>
+                            <li><a href="#why_we" data-scroll="">ПОРТФОЛИО</a></li>
+                            <li><a href="#technologies_result">О НАС</a></li>
+                            <li><a href="#examples_our_work">КОНТАКТЫ</a></li>
+                            <!--<li><a href="#what_is_landing">ЗАКАЗАТЬ</a></li>-->
+                            <li class="menu__line"></li>
+                        </ul>
+                    </nav>
+                    <button type="button" class="navbar-toggle collapsed">
+                        <span class="sr-only">Меню</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="header_info">
+                        <a class="header_phone" href="tel:342423">38 096 0714622</a>
+                        <button class="order_callback modal" data-modal="modal-1" data-info="Заказ обратного звонка.">Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 header_content">
+                    <h1>ПРОДАЮЩИЕ ЛЕНДИНГИ<br><span>ПРЕМИУМ КЛАССА под ключ</span></h1>
+                    <form id="form" class="header_form">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="modal_form_input_wrap">
+                                <div class="modal_input_error">Заполните поле
+                                    <div class="modal_error_triangle"></div>
+                                    <div class="modal_error_chest_img"></div>
+                                </div>
+                                <input name="name" class="modal_form_input" placeholder="Ваше имя" type="text">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="modal_form_input_wrap">
+                                <div class="modal_input_error">Заполните поле
+                                    <div class="modal_error_triangle"></div>
+                                    <div class="modal_error_chest_img"></div>
+                                </div>
+                                <input name="email" class="modal_form_email" placeholder="Ваш e-mail" type="text">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="modal_form_input_wrap">
+                                <div class="modal_input_error">Заполните поле
+                                    <div class="modal_error_triangle"></div>
+                                    <div class="modal_error_chest_img"></div>
+                                </div>
+                                <input name="phone" class="modal_form_phone" placeholder="Ваш телефон" type="text">
+                            </div>
+                        </div>
+                        <input type="hidden" name="form_name" value="Заявка с самой первой формы">
+                        <input type="hidden" name="form_type" value="normal">
+                        <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+                            <input type="submit" class="btn" value="Узнать подробнее">
+                        </div>
+
+                    </form>
+                </div>
+                <div class="button_go_portfolio">
+                    <a href="#what_is_landing"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- .what_is_landing -->
+    <section class="what_is_landing" id="what_is_landing">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>ЧТО ТАКОЕ <span>LENDING PAGE?</span></h2>
+                    <p class="subtitle"><span>Landing Page</span> (целевая страница, страница захвата) — это страница в интернете, задача которой<br>
+                        превратить посетителей сайта в Ваших клиентов <span>с максимально возможной вероятностью</span>.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 item">
+                    <i class="icon_investments"></i>
+                    <p class="title">Это инвестиции, а не расходы</p>
+                    <p>Деньги, которые Вы вкладываете
+                        в разработку и рекламу - это депозит,
+                        который даст солидные дивиденды
+                        уже <span>в следующем месяце.</span></p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 item">
+                    <i class="icon_payback"></i>
+                    <p class="title">Потрясающая окупаемость</p>
+                    <p>Как правило, наши лендинги окупаются
+                        за срок менее месяца. Расходы на рекламу
+                        и доход от продажи услуг/товаров
+                        <span>имеют соотношение 1:3</span>.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 item">
+                    <i class="icon_clock"></i>
+                    <p class="title">Быстрее. Дешевле. Лучше.</p>
+                    <p>В отличии от обычного сайта, создать
+                        систему по привлечению клиентов <span>займет
+                        не более 2 недель</span> с момента подписания договора и предоплаты.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--.why_we-->
+    <section class="why_we" id="why_we">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>ПОЧЕМУ КЛИЕНТЫ <span>ВЫБИРАЮ НАС?</span></h2>
+                </div>
+                <div class="col-lg-4 col-md-5 col-lg-offset-1 col-sm-6 item">
+                    <i class="icon_why_we_1"></i>
+                    <p>Более 5 лет<br><span>на рынке маркетинга</span></p>
+                </div>
+                <div class="col-lg-5 col-md-5 col-lg-offset-2 col-md-offset-2 col-sm-6 item">
+                    <i class="icon_why_we_2"></i>
+                    <p>Более 150<br><span>выполненных работ</span></p>
+                </div>
+
+                <div class="col-lg-4 col-md-5 col-lg-offset-1 col-sm-6 item">
+                    <i class="icon_why_we_3"></i>
+                    <p>Доступность<br><span>в любой день недели</span></p>
+                </div>
+                <div class="col-lg-5 col-md-5 col-lg-offset-2 col-md-offset-2 col-sm-6 item">
+                    <i class="icon_why_we_4"></i>
+                    <p>Скидки <span>для<br>постоянных клиентов</span></p>
+                </div>
+
+                <div class="col-lg-4 col-md-5 col-lg-offset-1 col-sm-6 item">
+                    <i class="icon_why_we_5"></i>
+                    <p>Поддержка<br><span>после запуска</span></p>
+                </div>
+                <div class="col-lg-5 col-md-5 col-lg-offset-2 col-md-offset-2 col-sm-6 item">
+                    <i class="icon_why_we_6"></i>
+                    <p>Укладываемся<br><span>в жатые сроки</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<section class="lp">
+		<div class="container">
+            <div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 lp_margin">
+					<h2>Хотите получить <span>еффективный</span> Landing page?</h2>
+					<p> Мы работаем только с теми, кому действительно можем создать эффективную систему по привлечению клиентов. 
+						Никаких шаблонов, таймеров огромных размеров и глупых акций, которые вызывают ощущение 'впаривания'.</p><br>
+					<strong>Мы работаем с серьезными компаниями и совместно достигаем мощных результатов.</strong>
+					<button class="btn">Заказать landing page</button>
+				</div>	
+            </div>
+        </div>
+	</section>
+
+    <!--.technologies_result-->
+    <section class="technologies_result" id="technologies_result">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Технологии для<br><span>достижения результата</span></h2>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 col-lg-offset-1 item">
+                    <div>
+                        <p class="title">Смыслы и ценности</p>
+                        <p>Полное погружение в ваш бизнес. Извлекаем смыслы
+                            и ценности, выделяем сильные стороны бизнеса.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-4 col-lg-offset-2 item">
+                    <div>
+                        <p class="title">Грамотный копирайтинг</p>
+                        <p>Когда у вас всего одна страничка, каждое слово — на вес золота. Каждый экран — смысловая пуля — </p>
+                    </div>
+                </div>
+                <div class="col-lg-12 hidden-xs technologies_result_img">
+                    <img src="img/technologies_result_img.png" alt="">
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 col-lg-offset-1 item">
+                    <div>
+                        <p class="title">Интеллектуальность</p>
+                        <p>Мы уважаем потребителя и не используем отталкивающих клиента маркетинговых технологий типа таймеров, акций и тому подобных ухищрений.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-4 col-lg-offset-2 item">
+                    <div>
+                        <p class="title">Премиум дизайн</p>
+                        <p>Мы разрабатываем уникальный дизайн для каждого проекта. при этом мнение наших клиентов учитывается в первую очередь.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--.who_need_lp-->
+    <section class="who_need_lp">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Для кого подходит<br><span>лендинг пейдж?</span></h2>
+                </div>
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="who_need_lp_slider">
+                        <div class="item">
+                            <i class="who_need_lp1"></i>
+                            <p>Бизнес <br>в сфере услуг</p>
+                            <button class="modal" data-modal="modal-1" data-info="Заявка с блока кому нужен lp.">Подробнее</button>
+                        </div>
+                        <div class="item">
+                            <i class="who_need_lp2"></i>
+                            <p>Производители уникальных товаров</p>
+                            <button class="modal" data-modal="modal-1" data-info="Заявка с блока кому нужен lp.">Подробнее</button>
+                        </div>
+                        <div class="item">
+                            <i class="who_need_lp4"></i>
+                            <p>Оптовой продажи товаров</p>
+                            <button class="modal" data-modal="modal-1" data-info="Заявка с блока кому нужен lp.">Подробнее</button>
+                        </div>
+                        <div class="item">
+                            <i class="who_need_lp5"></i>
+                            <p>Культурно-развлекательные заведения</p>
+                            <button class="modal" data-modal="modal-1" data-info="Заявка с блока кому нужен lp.">Подробнее</button>
+                        </div>
+                        <div class="item">
+                            <i class="who_need_lp3"></i>
+                            <p>Инфобизнесмены</p>
+                            <button class="modal" data-modal="modal-1" data-info="Заявка с блока кому нужен lp.">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--.examples_our_work-->
+    <section class="examples_our_work" id="examples_our_work">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2><span>Примеры</span> наших рабоТ:</h2>
+                </div>
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="view-more-block clearfix">
+
+                        <figure class="col-xs-6 col-sm-4 col-md-4 snip1321"><img src="img/portfolio/preview/insta.png" alt="" title="">
+                            <figcaption><i class="ion-upload"></i>
+                                <h4>Продвижение в инстаграм</h4>
+                                <p>Продающая лендинг страница по услуге продвижение в instagram</p>
+                            </figcaption>
+                            <a href="page-portfolio/instagram.html"></a>
+                        </figure>
+
+                        <figure class="col-xs-6 col-sm-4 col-md-4 snip1321"><img src="img/portfolio/preview/lenta_s.png" alt="" title="">
+                            <figcaption><i class="ion-upload"></i>
+                                <h4>Лента-S</h4>
+                                <p>Разработка landing page под аксессуар для смартфонов — липучка на телефон. <br>Использовали создание фирменной графики для лучшего восприятия бренда.</p>
+                            </figcaption>
+                            <a href="page-portfolio/lenta-s.html"></a>
+                        </figure>
+                        <figure class="col-xs-6 col-sm-4 col-md-4 snip1321"><img src="img/portfolio/preview/velo.png" alt="" title="">
+                            <figcaption><i class="ion-upload"></i>
+                                <h4>Вело в Дело</h4>
+                                <p>Разработка лендинг пейдж по производству вело-торговых модулей</p>
+                            </figcaption>
+                            <a href="page-portfolio/velo.html"></a>
+                        </figure>
+                        <figure class="col-xs-6 col-sm-4 col-md-4 snip1321"><img src="img/portfolio/preview/refback.png" alt="" title="">
+                            <figcaption><i class="ion-upload"></i>
+                                <h4>РЕФБЕКИ</h4>
+                                <p>Создание landing page для сайта платформы refback.</p>
+                            </figcaption>
+                            <a href="page-portfolio/refback.html"></a>
+                        </figure>
+                        <figure class="col-xs-6 col-sm-4 col-md-4 snip1321"><img src="img/portfolio/preview/zatoka.png" alt="" title="">
+                            <figcaption><i class="ion-upload"></i>
+                                <h4>База отдыха «Затока»</h4>
+                                <p>Сайт лендинг пейдж для базы отдыха «Затока»</p>
+                            </figcaption>
+                            <a href="page-portfolio/zatoka.html"></a>
+                        </figure>
+                        <figure class="col-xs-6 col-sm-4 col-md-4 snip1321"><img src="img/portfolio/preview/adv_img.png" alt="" title="">
+                            <figcaption><i class="ion-upload"></i>
+                                <h4>Контекстная реклама</h4>
+                                <p>Лендинг пейдж для Марата Шайхутдинова, сертифицированного эксперта по настройке контекстной рекламы.</p>
+                            </figcaption>
+                            <a href="page-portfolio/advertising.html"></a>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+                        <button class="btn_fill view-more">Смотреть ещё</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<section class="table_money">
+		<div class="container">
+            <div class="row">
+            	<div class="col-lg -12 col-md-12 table_margin">
+				<div class="col-lg-12 col-md-12 col-sm-12 ">
+					<h2>Тарифы</h2>
+				</div>	
+				<div class="col-lg-12 col-md-12 col-sm-12 ">
+					<img src="img/arrow_table_money.png">
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="standart_head">
+						<h3>Стандарт</h3>
+						<h4>25000 ₽</h4>
+					</div>
+					<div class="standart">
+						<ul class="ok">
+							<li> SWOT-анализ бизнеса</li>
+							<li> Разработка концепта и 4U УТП</li>
+							<li> Профессиональный копирайтинг</li>
+							<li> Разработка скелета страницы</li>
+							<li> Индивидуальный элитный дизайн</li>
+							<li> Кроссбраузерная верстка</li></ul>
+						<ul class="non">
+							<li> Базовая SEO оптимизация</li>
+							<li> Настройка аналитики и целей</li>
+							<li> Настройка корпоративной почты</li>
+							<li> Настройка UTM-меток</li>
+							<li> Настройка СМС-информирования</li>
+							<li> Настройка Google Adwords</li>
+							<li> Настройка ремаркетинга</li>
+							<li> 30 дней улучшения объявлений</li>
+							<li> Купон на 600 грн - в подарок</li>
+							<li> Домен и хостинг - в подарок</li>
+							<li> Интеграция AmoCRM - в подарок</li>
+						</ul>
+						<button class="btn">Заказать пакет "Стандарт"</button>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4">
+					<div class="premium_head">
+						<h3>Премиум</h3>
+						<h4>45000 ₽</h4>
+					</div>
+					<div class="premium">
+						<ul class="ok">
+							<li> SWOT-анализ бизнеса</li>
+							<li> Разработка концепта и 4U УТП</li>
+							<li> Профессиональный копирайтинг</li>
+							<li> Разработка скелета страницы</li>
+							<li> Индивидуальный элитный дизайн</li>
+							<li> Кроссбраузерная верстка</li>
+							<li> Базовая SEO оптимизация</li>
+							<li> Настройка аналитики и целей</li>
+							<li> Настройка корпоративной почты</li>
+							<li> Настройка UTM-меток</li>
+							<li> Настройка СМС-информирования</li>
+							<li> Настройка Google Adwords</li></ul>
+						<ul class="non">	
+							<li> Настройка ремаркетинга</li>
+							<li> 30 дней улучшения объявлений</li>
+							<li> Купон на 600 грн - в подарок</li>
+							<li> Домен и хостинг - в подарок</li>
+							<li> Интеграция AmoCRM - в подарок</li>
+						</ul>
+						<button class="btn_fill">Заказать пакет "Стандарт"</button>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4">
+					<div class="gold_head">
+						<h3>Gold</h3>
+						<h4>65000 ₽</h4>
+					</div>
+					<div class="standart">
+						<ul class="ok gold_margin">
+							<li> SWOT-анализ бизнеса</li>
+							<li> Разработка концепта и 4U УТП</li>
+							<li> Профессиональный копирайтинг</li>
+							<li> Разработка скелета страницы</li>
+							<li> Индивидуальный элитный дизайн</li>
+							<li> Кроссбраузерная верстка</li>
+							<li> Базовая SEO оптимизация</li>
+							<li> Настройка аналитики и целей</li>
+							<li> Настройка корпоративной почты</li>
+							<li> Настройка UTM-меток</li>
+							<li> Настройка СМС-информирования</li>
+							<li> Настройка Google Adwords</li>
+							<li> Настройка ремаркетинга</li>
+							<li> 30 дней улучшения объявлений</li>
+							<li> Купон на 600 грн - в подарок</li>
+							<li> Домен и хостинг - в подарок</li>
+							<li> Интеграция AmoCRM - в подарок</li>
+						</ul>
+						<button class="btn">Заказать пакет "Стандарт"</button>
+					</div>
+				</div>
+			  </div>
+            </div>
+        </div>
+	</section>
+
+    <section class="dop_geting">
+    	<div class="container">
+            <div class="row">
+            	<div class="col-lg-12 col-md-12 dop_margin">
+            	<div class="col-lg-12 col-md-12">
+            		<h2>Дополнительные <span>услуги</span></h2>
+            	</div>
+					<div class="col-lg-4 col-md-4"> 
+					  <i class="dop_i_1"></i>
+						<strong>Продвижение в инстаграм</strong>
+						<p>Деньги, которые Вы вкладываете в разработку и рекламу - это депозит, который даст солидные дивиденды уже
+								<span> в следующем месяце.</span></p>
+					</div>
+					<div class="col-lg-4 col-md-4">
+					 <i class="dop_i_2"></i>
+						<strong>Разработка сайта</strong>
+						<p>Как правило, наши лендинги окупаются за срок менее месяца. Расходы на рекламу и доход от продажи услуг/товаров<span>  имеют соотношение 1:3.</span></p>
+					</div>
+					<div class="col-lg-4 col-md-4"> 
+					  <i class="dop_i_3"></i>
+						<strong>Контекстная реклама</strong>
+						<p>В отличии от обычного сайта, создать систему по привлечению клиентов<span> займет не более 2 недель</span> с момента подписания договора и предоплаты. в следующем месяце.</p>
+					</div>
+				</div>
+            </div>
+          </div>
+    </section>
+
+
+	<section class="calculate" >
+
+
+		<div class="container">
+            <div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<h2>Калькулятор <span>доходности</span></h2>
+				</div>	
+				<div class="col-lg-offset-1 col-md-offset-1"></div>
+				<div class="col-lg-10 col-md-10 col-md-offset-1 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-4 col-xs-5 col calculate_info_wrap">
+                            <ul class="calculate_info">
+                                <li>Тариф</li>
+                                <li>Количество заказов в месяц</li>
+                                <li>Себестоимость товара (услуги)</li>
+                                <li>Стоимтость товара</li>
+                                <li>Прибыль</li>
+                                <li>Срок окупаемости лендинга</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-8 col-xs-7 col_custom_2">
+                            <div class="calculate_info_button">
+                                <button class="active" data-slide="standart">Стандарт</button>
+                                <button data-slide="premium">Премиум</button>
+                                <button data-slide="gold">Gold</button>
+                                <div class="select_service">
+                                    <p>Стандарт</p>
+                                    <ul>
+                                        <li class="active" data-slide="standart">Стандарт</li>
+                                        <li data-slide="premium">Премиум</li>
+                                        <li data-slide="gold">Gold</li>
+                                    </ul>
+                                    <!--<button class="active" data-slide="standart">Стандарт</button>-->
+                                    <!--<button data-slide="premium">Премиум</button>-->
+                                    <!--<button data-slide="gold">Gold</button>-->
+                                </div>
+                            </div>
+                            <div class="slide_calc_wrap active" data-slide="standart">
+                                <div class="slide_item">
+                                    <span>0</span>
+                                    <div id="slider" class="custom_slider">
+                                        <div class="wrap_handle">
+                                            <div id="custom-handle" class="ui-slider-handle"><span></span></div>
+                                        </div>
+                                    </div>
+                                    <span>500</span>
+
+                                    <input type="number" id="input-slider-1" name="quantity_order">
+
+                                </div>
+                                <div class="slide_item">
+                                    <span>0</span>
+                                    <div id="slider-2" class="custom_slider">
+                                        <div class="wrap_handle">
+                                            <div id="custom-handle-2" class="ui-slider-handle"><span></span></div>
+                                        </div>
+                                    </div>
+                                    <span>300</span>
+                                    <input type="number" id="input-slider-2" name="cost_goods">
+                                </div>
+                                <div class="slide_item">
+                                    <span>300</span>
+                                    <div id="slider-3" class="custom_slider">
+                                        <div class="wrap_handle">
+                                            <div id="custom-handle-3" class="ui-slider-handle"><span></span></div>
+                                        </div>
+                                    </div>
+                                    <span>600</span>
+                                    <input type="number" id="input-slider-3" name="price_goods">
+                                </div>
+                                <input type="hidden" value="25000" name="price">
+                            </div>
+                            <div class="slide_calc_wrap" data-slide="premium">
+                                <div class="slide_item">
+                                    <span>0</span>
+                                    <div id="slider-4" class="custom_slider">
+                                        <div class="wrap_handle">
+                                            <div id="custom-handle-4" class="ui-slider-handle"><span></span></div>
+                                        </div>
+                                    </div>
+                                    <span>500</span>
+                                    <input type="number" id="input-slider-4" name="quantity_order">
+                                </div>
+                                <div class="slide_item">
+                                    <span>0</span>
+                                    <div id="slider-5" class="custom_slider">
+                                        <div class="wrap_handle">
+                                            <div id="custom-handle-5" class="ui-slider-handle"><span></span></div>
+                                        </div>
+                                    </div>
+                                    <span>300</span>
+                                    <input type="number" id="input-slider-5" name="cost_goods">
+                                </div>
+                                <div class="slide_item">
+                                    <span>300</span>
+                                    <div id="slider-6" class="custom_slider">
+                                        <div class="wrap_handle">
+                                            <div id="custom-handle-6" class="ui-slider-handle"><span></span></div>
+                                        </div>
+                                    </div>
+                                    <span>600</span>
+                                    <input type="number" id="input-slider-6" name="price_goods">
+                                </div>
+                                <input type="hidden" value="45000" name="price">
+                            </div>
+                            <div class="slide_calc_wrap" data-slide="gold">
+                                <div class="slide_item">
+                                    <span>0</span>
+                                    <div id="slider-7" class="custom_slider">
+                                        <div class="wrap_handle">
+                                            <div id="custom-handle-7" class="ui-slider-handle"><span></span></div>
+                                        </div>
+                                    </div>
+                                    <span>500</span>
+                                    <input type="number" id="input-slider-7" name="quantity_order">
+                                </div>
+                                <div class="slide_item">
+                                    <span>0</span>
+                                    <div id="slider-8" class="custom_slider">
+                                        <div class="wrap_handle">
+                                            <div id="custom-handle-8" class="ui-slider-handle"><span></span></div>
+                                        </div>
+                                    </div>
+                                    <span>300</span>
+                                    <input type="number" id="input-slider-8" name="cost_goods">
+                                </div>
+                                <div class="slide_item">
+                                    <span>300</span>
+                                    <div id="slider-9" class="custom_slider">
+                                        <div class="wrap_handle">
+                                            <div id="custom-handle-9" class="ui-slider-handle"><span></span></div>
+                                        </div>
+                                    </div>
+                                    <span>600</span>
+                                    <input type="number" id="input-slider-9" name="price_goods">
+                                </div>
+                                <input type="hidden" value="65000" name="price">
+                            </div>
+                            <div class="slide_result">
+                                <p id="slide_porfit"><span>0</span> руб.</p>
+                                <p id="slide_time"><span>0</span> дней</p>
+                            </div>
+                        </div>
+
+                    </div>
+				</div>
+            </div>
+        </div>
+	</section>
+
+
+	<section class="how_we_work">
+		<div class="container">
+            <div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<h2>Как <span>мы</span> работаем</h2>
+				</div>
+				<div class="scheme_work" id="scheme_work">
+			<div class="container">
+				<div class="tomato_line"></div>
+				<div class="all-scheme">
+					<div class="row">
+						<div class="col-xs-6 col-sm-3 col-md-3">
+							<div class="number_process">1</div>
+							<div class="for_icon"><img src="img/icon/how_we_work1.png" height="88" width="91" alt="Пожелания по проекту" title="Оставление заявки на сайте или по телефону"></div>
+							<p class="title_block">Вы<span> звоните </span> или<br> <span>оставляете заявку</span><br> на сайте </p><i></i>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-3">
+							<div class="number_process">2</div>
+							<div class="for_icon"><img src="img/icon/how_we_work2.png" height="79" width="95" alt="Обсуждение проекта" title="Коллективное создание технического задания для вашего проекта"></div>
+							<p class="title_block">Мы <span>консультируем</span><br> и <span>отвечаем</span> на Ваши<br> вопросы</p>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-3">
+							<div class="number_process">3</div>
+							<div class="for_icon"><img src="img/icon/how_we_work3.png" height="83" width="83" alt="Изучение аудитории" title="Находим преимущества и особенности вашего дела"></div>
+							<p class="title_block"><span>Изучаем</span> Ваш<br> бизнес и целевую<br> аудиторию</p>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-3">
+							<div class="number_process">4</div>
+							<div class="for_icon"><img src="img/icon/how_we_work4.png" height="81" width="97" alt="Создание прототипа" title="Создание удобной структуры страницы"></div>
+							<p class="title_block"><span>Разрабатываем</span><br> прототип будующей<br> страницы</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-3 col-md-3">
+							<div class="number_process">5</div>
+							<div class="for_icon"><img src="img/icon/how_we_work5.png" height="88" width="91" alt="Рисумем дизайн" title="Используем новейшее тренды web-графики для вашего дизайна"></div>
+							<p class="title_block"><span>Разрабатываем</span><br> продающий дизайн<br> страницы<span></span></p>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-3">
+							<div class="number_process">6</div>
+							<div class="for_icon"><img src="img/icon/how_we_work6.png" height="79" width="95" alt="Производится Верстка и Копирайт" title="Делаем верстку за нашим дизайном и наполняем лендинг текстами"></div>
+							<p class="title_block">Приступаем<br> к <span>верстке</span> посадочной<br> страницы</p>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-3">
+							<div class="number_process">7</div>
+							<div class="for_icon"><img src="img/icon/how_we_work7.png" height="83" width="83" alt="Тест лендинга" title="Запускаем и тестируем landing page на работоспособность"></div>
+							<p class="title_block"><span>Запускаем</span>,<br> настраиваем<br> и тестируем страницу<span></span></p>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-3">
+							<div class="number_process">8</div>
+							<div class="for_icon"><img src="img/icon/how_we_work8.png" height="81" width="97" alt="Конечный этап разработки" title="Клиенты приходят на ваш лендинг и связываются с вами"></div>
+							<p class="title_block">Вы получаете <br><span>много клиентов</span><br> с интернета</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>	
+            </div>
+        </div>
+	</section>
+
+
+	<section class="comments">
+		<div class="container">
+            <div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<h2>Отзывы</h2>
+
+			<div class="comment_slider">
+			        <div class="item">
+			          <div class="tips_up"><img src="img/tips_up.png"></div>
+			          <div class="talk-about-us_photo"></div>
+			          <p class="item__text">
+			            Мы работаем с Вами по классической схеме 50% предоплата до начала работ - 50% постоплата после утверждения сверстанного лендинга.Мы работаем с Вами по классической схеме 50% предоплата до начала работ - 50% постоплата после утверждения сверстанного лендинга.Мы работаем с Вами по классической схеме 50% предоплата до начала работ - 50% постоплата после 
+			          </p><div class="tips_down"><img src="img/tips_down.png"></div>
+			        </div>
+			        <div class="item">
+			          <div class="tips_up"><img src="img/tips_up.png"></div>
+			          <div class="talk-about-us_photo"></div>
+			          <p class="item__text">
+			            Мы работаем с Вами по классической схеме 50% предоплата до начала работ - 50% постоплата после утверждения сверстанного лендинга.Мы работаем с Вами по классической схеме 50% предоплата до начала работ - 50% постоплата после утверждения сверстанного лендинга.Мы работаем с Вами по классической схеме 50% предоплата до начала работ - 50% постоплата после 
+			          </p><div class="tips_down"><img src="img/tips_down.png"></div>
+			        </div>
+			        <div class="item">
+			          <div class="tips_up"><img src="img/tips_up.png"></div>
+			          <div class="talk-about-us_photo"></div>
+			          <p class="item__text">
+			            Мы работаем с Вами по классической схеме 50% предоплата до начала работ - 50% постоплата после утверждения сверстанного лендинга.Мы работаем с Вами по классической схеме 50% предоплата до начала работ - 50% постоплата после утверждения сверстанного лендинга.Мы работаем с Вами по классической схеме 50% предоплата до начала работ - 50% постоплата после 
+			          </p><div class="tips_down"><img src="img/tips_down.png"></div>
+			        </div>
+			        <div class="item">
+			          <div class="tips_up"><img src="img/tips_up.png"></div>
+			          <div class="talk-about-us_photo"></div>
+			           <p class="item__text">
+			            Мы работаем с Вами по классической схеме 50% предоплата до начала работ - 50% постоплата после утверждения сверстанного лендинга.Мы работаем с Вами по классической схеме 50% предоплата до начала работ - 50% постоплата после утверждения сверстанного лендинга.Мы работаем с Вами по классической схеме 50% предоплата до начала работ - 50% постоплата после 
+			          </p><div class="tips_down"><img src="img/tips_down.png"></div>
+			        </div>
+			      </div>
+
+				</div>	
+            </div>
+        </div>
+	</section>
+
+
+
+	<section class="lp">
+		<div class="container">
+            <div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 lp_margin">
+
+
+					<h2>Хотите получить <span>еффективный</span> Landing page?</h2>
+					<p> Мы работаем только с теми, кому действительно можем создать эффективную систему по привлечению клиентов. 
+						Никаких шаблонов, таймеров огромных размеров и глупых акций, которые вызывают ощущение 'впаривания'.</p><br>
+					<strong>Мы работаем с серьезными компаниями и совместно достигаем мощных результатов.</strong>
+					<button class="btn">Заказать landing page</button>
+				</div>	
+			<!--	<div class="video-overlay" style="height: 503px;"></div>
+				<video autoplay="" loop="" muted="" poster="video/video.jpg">
+						<source src="video/video.webm" type="video/webm">
+						<source src="video/video.mp4" type="video/mp4">
+				</video>-->
+
+            </div>
+        </div>
+	</section>
+
+	<footer>
+		<div class="container">
+	        <div class="row">	
+	        	<div class="col-lg-9 col-md-9 foot_p">
+	        		<p class="foot_quest"><span>ОСТАЛИСЬ ВОПРОСЫ?</span></p>
+	        		<p class="foot_manager"><span>ЗАДАЙТЕ ИХ МЕНЕДЖЕРУ:</span></p>
+	        	</div>
+	        	<div class="col-lg-3 col-md-3 foot_link">
+					<a class="phone" href="tel:+380960714622"> 38 096 0714622</a><br><br>
+	          		<a class="skype" href="skype:melfori"> melfori</a><br><br>
+	          		<a class="mail" href="mailto:info@melfori.com"> info@melfori.com</a>
+	          </div>
+
+	          <div class="col-lg-12 col-md-12 foot_danger">
+	          	<p>melfori.com 2016 ® Сайт внесён в реестр Авторских прав. Копирование лендинга или его мастей, запрещено.</p>
+	          </div>
+            </div>
+	    </div>    
+	</footer>
+
+    <div class="hidden"></div>
+    <!--[if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>`
+    <script src="libs/respond/respond.min.js"></script>
+    <![endif]-->
+    <!-- Load Scripts Start -->
+    <script>
+    var scr = {
+        "scripts": [{
+            "src": "js/libs.js",
+            "async": false
+        }, {
+            "src": "js/common.js",
+            "async": false
+        }]
+    };
+    ! function(t, n, r) {
+        "use strict";
+        var c = function(t) {
+            if ("[object Array]" !== Object.prototype.toString.call(t)) return !1;
+            for (var r = 0; r < t.length; r++) {
+                var c = n.createElement("script"),
+                    e = t[r];
+                c.src = e.src, c.async = e.async, n.body.appendChild(c)
+            }
+            return !0
+        };
+        t.addEventListener ? t.addEventListener("load", function() {
+            c(r.scripts);
+        }, !1) : t.attachEvent ? t.attachEvent("onload", function() {
+            c(r.scripts)
+        }) : t.onload = function() {
+            c(r.scripts)
+        }
+    }(window, document, scr);
+    </script>
+
+    <!-- Load Scripts End -->
+</body>
+
+</html>
